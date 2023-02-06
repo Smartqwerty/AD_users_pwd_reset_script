@@ -3,7 +3,7 @@ $TEST_SCRIPT = $True
 #users in $excluded_users - will be excluded from pwd reset
 $group_to_reset_name = 'password_hard'
 $group_to_exclude_name = 'password_excluded_users'
-#old pwd days count
+#old password days count
 $days = 20
 $days = [DateTime]::Today.AddDays(-$days)
 "{0} {1}" -f 'Change all passwords older:', $days
